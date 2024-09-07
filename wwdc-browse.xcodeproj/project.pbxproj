@@ -11,13 +11,14 @@
 		A9380C572C8CA82000FB3CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9380C562C8CA82000FB3CEA /* Assets.xcassets */; };
 		A9380C5A2C8CA82000FB3CEA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A9380C592C8CA82000FB3CEA /* Base */; };
 		A9380C5D2C8CA82000FB3CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C5C2C8CA82000FB3CEA /* main.m */; };
-		A9380C652C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */; };
 		A9380C732C8CA9DB00FB3CEA /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C672C8CA9DB00FB3CEA /* DiscoverViewController.m */; };
 		A9380C742C8CA9DB00FB3CEA /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C692C8CA9DB00FB3CEA /* BrowseViewController.m */; };
 		A9380C752C8CA9DB00FB3CEA /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C6E2C8CA9DB00FB3CEA /* AccountViewController.m */; };
 		A9380C762C8CA9DB00FB3CEA /* WWDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C6F2C8CA9DB00FB3CEA /* WWDCViewController.m */; };
 		A9380C772C8CA9DB00FB3CEA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */; };
 		A9380C782C8CA9DB00FB3CEA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C722C8CA9DB00FB3CEA /* SearchViewController.m */; };
+		A9380C7E2C8CB4B300FB3CEA /* WWDCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C7D2C8CB4B300FB3CEA /* WWDCCategory.m */; };
+		A9380C812C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C802C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +30,6 @@
 		A9380C592C8CA82000FB3CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9380C5B2C8CA82000FB3CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9380C5C2C8CA82000FB3CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9380C632C8CA87900FB3CEA /* WWDCBrowseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWDCBrowseAppDelegate.h; path = ../../../../.Trash/WWDCBrowseAppDelegate.h; sourceTree = "<group>"; };
-		A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWDCBrowseAppDelegate.m; path = ../../../../.Trash/WWDCBrowseAppDelegate.m; sourceTree = "<group>"; };
 		A9380C672C8CA9DB00FB3CEA /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		A9380C682C8CA9DB00FB3CEA /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		A9380C692C8CA9DB00FB3CEA /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
@@ -43,6 +42,10 @@
 		A9380C702C8CA9DB00FB3CEA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		A9380C722C8CA9DB00FB3CEA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		A9380C7C2C8CB4B300FB3CEA /* WWDCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDCCategory.h; sourceTree = "<group>"; };
+		A9380C7D2C8CB4B300FB3CEA /* WWDCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDCCategory.m; sourceTree = "<group>"; };
+		A9380C7F2C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDCBrowseAppDelegate.h; sourceTree = "<group>"; };
+		A9380C802C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDCBrowseAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +89,10 @@
 		A9380C492C8CA81E00FB3CEA /* wwdc-browse */ = {
 			isa = PBXGroup;
 			children = (
-				A9380C632C8CA87900FB3CEA /* WWDCBrowseAppDelegate.h */,
-				A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */,
+				A9380C7F2C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.h */,
+				A9380C802C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.m */,
+				A9380C7B2C8CACC000FB3CEA /* Models */,
+				A9380C7A2C8CACB900FB3CEA /* Views */,
 				A9380C662C8CA9BD00FB3CEA /* Controllers */,
 				A9380C562C8CA82000FB3CEA /* Assets.xcassets */,
 				A9380C582C8CA82000FB3CEA /* LaunchScreen.storyboard */,
@@ -122,6 +127,22 @@
 				A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		A9380C7A2C8CACB900FB3CEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9380C7B2C8CACC000FB3CEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9380C7C2C8CB4B300FB3CEA /* WWDCCategory.h */,
+				A9380C7D2C8CB4B300FB3CEA /* WWDCCategory.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EB144FEA58F6A2925240CDE0 /* Pods */ = {
@@ -228,14 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9380C652C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m in Sources */,
 				A9380C732C8CA9DB00FB3CEA /* DiscoverViewController.m in Sources */,
 				A9380C742C8CA9DB00FB3CEA /* BrowseViewController.m in Sources */,
 				A9380C762C8CA9DB00FB3CEA /* WWDCViewController.m in Sources */,
+				A9380C7E2C8CB4B300FB3CEA /* WWDCCategory.m in Sources */,
 				A9380C5D2C8CA82000FB3CEA /* main.m in Sources */,
 				A9380C752C8CA9DB00FB3CEA /* AccountViewController.m in Sources */,
 				A9380C782C8CA9DB00FB3CEA /* SearchViewController.m in Sources */,
 				A9380C772C8CA9DB00FB3CEA /* DetailViewController.m in Sources */,
+				A9380C812C8CB7BB00FB3CEA /* WWDCBrowseAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
