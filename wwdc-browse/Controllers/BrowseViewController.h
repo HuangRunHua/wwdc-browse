@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BrowseViewController : UIViewController
+@interface BrowseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
