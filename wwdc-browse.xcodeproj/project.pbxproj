@@ -7,28 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9380C4C2C8CA81E00FB3CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C4B2C8CA81E00FB3CEA /* AppDelegate.m */; };
-		A9380C4F2C8CA81E00FB3CEA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C4E2C8CA81E00FB3CEA /* SceneDelegate.m */; };
-		A9380C522C8CA81E00FB3CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C512C8CA81E00FB3CEA /* ViewController.m */; };
-		A9380C552C8CA81E00FB3CEA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A9380C542C8CA81E00FB3CEA /* Base */; };
+		349375E97D7039ACC2374A95 /* libPods-wwdc-browse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 867865411929A827EAC1773E /* libPods-wwdc-browse.a */; };
 		A9380C572C8CA82000FB3CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9380C562C8CA82000FB3CEA /* Assets.xcassets */; };
 		A9380C5A2C8CA82000FB3CEA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A9380C592C8CA82000FB3CEA /* Base */; };
 		A9380C5D2C8CA82000FB3CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C5C2C8CA82000FB3CEA /* main.m */; };
+		A9380C652C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */; };
+		A9380C732C8CA9DB00FB3CEA /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C672C8CA9DB00FB3CEA /* DiscoverViewController.m */; };
+		A9380C742C8CA9DB00FB3CEA /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C692C8CA9DB00FB3CEA /* BrowseViewController.m */; };
+		A9380C752C8CA9DB00FB3CEA /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C6E2C8CA9DB00FB3CEA /* AccountViewController.m */; };
+		A9380C762C8CA9DB00FB3CEA /* WWDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C6F2C8CA9DB00FB3CEA /* WWDCViewController.m */; };
+		A9380C772C8CA9DB00FB3CEA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */; };
+		A9380C782C8CA9DB00FB3CEA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9380C722C8CA9DB00FB3CEA /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6391A495D687DB7FE9AC063F /* Pods-wwdc-browse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wwdc-browse.debug.xcconfig"; path = "Target Support Files/Pods-wwdc-browse/Pods-wwdc-browse.debug.xcconfig"; sourceTree = "<group>"; };
+		867865411929A827EAC1773E /* libPods-wwdc-browse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wwdc-browse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF5F0B53CE4F50056259932 /* Pods-wwdc-browse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wwdc-browse.release.xcconfig"; path = "Target Support Files/Pods-wwdc-browse/Pods-wwdc-browse.release.xcconfig"; sourceTree = "<group>"; };
 		A9380C472C8CA81E00FB3CEA /* wwdc-browse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wwdc-browse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9380C4A2C8CA81E00FB3CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A9380C4B2C8CA81E00FB3CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9380C4D2C8CA81E00FB3CEA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		A9380C4E2C8CA81E00FB3CEA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		A9380C502C8CA81E00FB3CEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9380C512C8CA81E00FB3CEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A9380C542C8CA81E00FB3CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9380C562C8CA82000FB3CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9380C592C8CA82000FB3CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9380C5B2C8CA82000FB3CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9380C5C2C8CA82000FB3CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9380C632C8CA87900FB3CEA /* WWDCBrowseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWDCBrowseAppDelegate.h; path = ../../../../.Trash/WWDCBrowseAppDelegate.h; sourceTree = "<group>"; };
+		A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWDCBrowseAppDelegate.m; path = ../../../../.Trash/WWDCBrowseAppDelegate.m; sourceTree = "<group>"; };
+		A9380C672C8CA9DB00FB3CEA /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		A9380C682C8CA9DB00FB3CEA /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		A9380C692C8CA9DB00FB3CEA /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
+		A9380C6A2C8CA9DB00FB3CEA /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		A9380C6B2C8CA9DB00FB3CEA /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		A9380C6C2C8CA9DB00FB3CEA /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A9380C6D2C8CA9DB00FB3CEA /* WWDCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWDCViewController.h; sourceTree = "<group>"; };
+		A9380C6E2C8CA9DB00FB3CEA /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		A9380C6F2C8CA9DB00FB3CEA /* WWDCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWDCViewController.m; sourceTree = "<group>"; };
+		A9380C702C8CA9DB00FB3CEA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A9380C722C8CA9DB00FB3CEA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349375E97D7039ACC2374A95 /* libPods-wwdc-browse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FBFB721A777A122E7C0CF98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867865411929A827EAC1773E /* libPods-wwdc-browse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9380C3E2C8CA81E00FB3CEA = {
 			isa = PBXGroup;
 			children = (
 				A9380C492C8CA81E00FB3CEA /* wwdc-browse */,
 				A9380C482C8CA81E00FB3CEA /* Products */,
+				EB144FEA58F6A2925240CDE0 /* Pods */,
+				9FBFB721A777A122E7C0CF98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +86,51 @@
 		A9380C492C8CA81E00FB3CEA /* wwdc-browse */ = {
 			isa = PBXGroup;
 			children = (
-				A9380C4A2C8CA81E00FB3CEA /* AppDelegate.h */,
-				A9380C4B2C8CA81E00FB3CEA /* AppDelegate.m */,
-				A9380C4D2C8CA81E00FB3CEA /* SceneDelegate.h */,
-				A9380C4E2C8CA81E00FB3CEA /* SceneDelegate.m */,
-				A9380C502C8CA81E00FB3CEA /* ViewController.h */,
-				A9380C512C8CA81E00FB3CEA /* ViewController.m */,
-				A9380C532C8CA81E00FB3CEA /* Main.storyboard */,
+				A9380C632C8CA87900FB3CEA /* WWDCBrowseAppDelegate.h */,
+				A9380C642C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m */,
+				A9380C662C8CA9BD00FB3CEA /* Controllers */,
 				A9380C562C8CA82000FB3CEA /* Assets.xcassets */,
 				A9380C582C8CA82000FB3CEA /* LaunchScreen.storyboard */,
 				A9380C5B2C8CA82000FB3CEA /* Info.plist */,
 				A9380C5C2C8CA82000FB3CEA /* main.m */,
 			);
 			path = "wwdc-browse";
+			sourceTree = "<group>";
+		};
+		A9380C662C8CA9BD00FB3CEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9380C6A2C8CA9DB00FB3CEA /* BrowseViewController.h */,
+				A9380C692C8CA9DB00FB3CEA /* BrowseViewController.m */,
+				A9380C792C8CA9F600FB3CEA /* Others */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9380C792C8CA9F600FB3CEA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A9380C682C8CA9DB00FB3CEA /* DiscoverViewController.h */,
+				A9380C672C8CA9DB00FB3CEA /* DiscoverViewController.m */,
+				A9380C6D2C8CA9DB00FB3CEA /* WWDCViewController.h */,
+				A9380C6F2C8CA9DB00FB3CEA /* WWDCViewController.m */,
+				A9380C6B2C8CA9DB00FB3CEA /* AccountViewController.h */,
+				A9380C6E2C8CA9DB00FB3CEA /* AccountViewController.m */,
+				A9380C6C2C8CA9DB00FB3CEA /* SearchViewController.h */,
+				A9380C722C8CA9DB00FB3CEA /* SearchViewController.m */,
+				A9380C702C8CA9DB00FB3CEA /* DetailViewController.h */,
+				A9380C712C8CA9DB00FB3CEA /* DetailViewController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		EB144FEA58F6A2925240CDE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6391A495D687DB7FE9AC063F /* Pods-wwdc-browse.debug.xcconfig */,
+				8BF5F0B53CE4F50056259932 /* Pods-wwdc-browse.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9380C602C8CA82000FB3CEA /* Build configuration list for PBXNativeTarget "wwdc-browse" */;
 			buildPhases = (
+				DD39B3CFFD5CFA2C42E7F7E0 /* [CP] Check Pods Manifest.lock */,
 				A9380C432C8CA81E00FB3CEA /* Sources */,
 				A9380C442C8CA81E00FB3CEA /* Frameworks */,
 				A9380C452C8CA81E00FB3CEA /* Resources */,
@@ -135,35 +193,55 @@
 			files = (
 				A9380C572C8CA82000FB3CEA /* Assets.xcassets in Resources */,
 				A9380C5A2C8CA82000FB3CEA /* Base in Resources */,
-				A9380C552C8CA81E00FB3CEA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD39B3CFFD5CFA2C42E7F7E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wwdc-browse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9380C432C8CA81E00FB3CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9380C522C8CA81E00FB3CEA /* ViewController.m in Sources */,
-				A9380C4C2C8CA81E00FB3CEA /* AppDelegate.m in Sources */,
+				A9380C652C8CA87900FB3CEA /* WWDCBrowseAppDelegate.m in Sources */,
+				A9380C732C8CA9DB00FB3CEA /* DiscoverViewController.m in Sources */,
+				A9380C742C8CA9DB00FB3CEA /* BrowseViewController.m in Sources */,
+				A9380C762C8CA9DB00FB3CEA /* WWDCViewController.m in Sources */,
 				A9380C5D2C8CA82000FB3CEA /* main.m in Sources */,
-				A9380C4F2C8CA81E00FB3CEA /* SceneDelegate.m in Sources */,
+				A9380C752C8CA9DB00FB3CEA /* AccountViewController.m in Sources */,
+				A9380C782C8CA9DB00FB3CEA /* SearchViewController.m in Sources */,
+				A9380C772C8CA9DB00FB3CEA /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A9380C532C8CA81E00FB3CEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9380C542C8CA81E00FB3CEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9380C582C8CA82000FB3CEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -227,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -282,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -293,6 +371,7 @@
 		};
 		A9380C612C8CA82000FB3CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6391A495D687DB7FE9AC063F /* Pods-wwdc-browse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,11 +380,12 @@
 				DEVELOPMENT_TEAM = YRB62S584T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wwdc-browse/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WWDC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,13 +393,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.wwdc-browse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A9380C622C8CA82000FB3CEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF5F0B53CE4F50056259932 /* Pods-wwdc-browse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,11 +413,12 @@
 				DEVELOPMENT_TEAM = YRB62S584T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wwdc-browse/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WWDC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,8 +426,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.wwdc-browse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
