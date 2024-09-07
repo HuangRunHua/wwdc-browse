@@ -67,7 +67,7 @@
     /// 必须写
     tabBarController.viewControllers = @[dnav, bnav, wnav, anav, snav];
     tabBarController.delegate = self;
-    
+    tabBarController.selectedIndex = 1;
     window.rootViewController = tabBarController;
     [window makeKeyAndVisible];
     return YES;

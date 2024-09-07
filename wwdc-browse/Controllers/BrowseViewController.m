@@ -135,7 +135,6 @@
         BrowseCategoryTableViewCell *cell = [
             tableView dequeueReusableCellWithIdentifier:browseKingKongCellReuseIdentifier
                                            forIndexPath:indexPath];
-        
         cell.wwdcCategory = self.kingkongCategory[indexPath.item];
         return cell;
     } else if (indexPath.section == 1) {
@@ -144,14 +143,12 @@
         BrowseCategoryTableViewCell *cell = [
             tableView dequeueReusableCellWithIdentifier:browseKingKongCellReuseIdentifier
                                            forIndexPath:indexPath];
-        
         cell.wwdcCategory = self.topicsCategory[indexPath.item];
         return cell;
     } else if (indexPath.section == 3) {
         BrowseCategoryTableViewCell *cell = [
             tableView dequeueReusableCellWithIdentifier:browseKingKongCellReuseIdentifier
                                            forIndexPath:indexPath];
-        
         cell.wwdcCategory = self.eventsCategory[indexPath.item];
         return cell;
     } else {
