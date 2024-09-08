@@ -9,14 +9,18 @@
 #import "BrowseViewController.h"
 #import "DetailViewController.h"
 #import "BrowseCategoryTableViewCell.h"
+#import "VideoTableViewCell.h"
 #import "WWDCCategory.h"
+#import "WWDCVideo.h"
 
 #define browseKingKongCellReuseIdentifier @"browseKingKongCell"
+#define CONTNUE_WATCH_VIDEO_REUSE_IDENTIFIER @"continueWatchVideoCellReuseIdentifier"
 
 @interface BrowseViewController ()
 @property (nonatomic, strong) NSArray<WWDCCategory *> *kingkongCategory;
 @property (nonatomic, strong) NSArray<WWDCCategory *> *topicsCategory;
 @property (nonatomic, strong) NSArray<WWDCCategory *> *eventsCategory;
+@property (nonatomic, strong) NSArray<WWDCVideo *> *continueWatchingVideos;
 
 @property (nonatomic, strong) UITableView *browseTableView;
 @end
@@ -103,6 +107,24 @@
             [[WWDCCategory alloc] initWithIconURL:@"doc.append"
                                             title:@"WWDC14"],
         ];
+        
+        self.continueWatchingVideos = @[
+            [[WWDCVideo alloc] initWithVideoFrameImageURL:@"demystify-swiftui-containers"
+                                               videoTitle:@"Demystify SwiftUI containers"
+                                                 videoTag:@"WWDC24"
+                                              publishYear:2024
+                                          userWatchStatus:@"9m left"],
+            [[WWDCVideo alloc] initWithVideoFrameImageURL:@"meet-financeKit"
+                                               videoTitle:@"Meet FinanceKit"
+                                                 videoTag:@"WWDC24"
+                                              publishYear:2024
+                                          userWatchStatus:@"1m left"],
+            [[WWDCVideo alloc] initWithVideoFrameImageURL:@"a-swift-tour-explore-swifts-features-and-design"
+                                               videoTitle:@"A Swift Tour: Explore Swift’s features and design"
+                                                 videoTag:@"WWDC24"
+                                              publishYear:2024
+                                          userWatchStatus:@"26m left"],
+        ];
     }
     return self;
 }
@@ -111,10 +133,15 @@
 {
     self.title = @"Browse";
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self loadTableView];
+}
+
+- (void)loadTableView
+{
     self.browseTableView = [[UITableView alloc] init];
     self.browseTableView.delegate = self;
     self.browseTableView.dataSource = self;
@@ -122,6 +149,7 @@
     self.browseTableView.rowHeight = UITableViewAutomaticDimension;
     self.browseTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.browseTableView registerClass:[BrowseCategoryTableViewCell class] forCellReuseIdentifier:browseKingKongCellReuseIdentifier];
+    [self.browseTableView registerClass:[VideoTableViewCell class] forCellReuseIdentifier:CONTNUE_WATCH_VIDEO_REUSE_IDENTIFIER];
     [self.view addSubview:self.browseTableView];
     [self.browseTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(self.view);
@@ -138,7 +166,11 @@
         cell.wwdcCategory = self.kingkongCategory[indexPath.item];
         return cell;
     } else if (indexPath.section == 1) {
-        
+        VideoTableViewCell *cell = [
+            tableView dequeueReusableCellWithIdentifier:CONTNUE_WATCH_VIDEO_REUSE_IDENTIFIER
+                                           forIndexPath:indexPath];
+        cell.wwdcVideo = self.continueWatchingVideos[indexPath.item];
+        return cell;
     } else if (indexPath.section == 2) {
         BrowseCategoryTableViewCell *cell = [
             tableView dequeueReusableCellWithIdentifier:browseKingKongCellReuseIdentifier
@@ -157,11 +189,6 @@
                                            forIndexPath:indexPath];
         return cell;
     }
-    
-    UITableViewCell *cell = [
-        tableView dequeueReusableCellWithIdentifier:@"cell"
-                                       forIndexPath:indexPath];
-    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -169,7 +196,7 @@
     if (section == 0) {
         return self.kingkongCategory.count;
     } else if (section == 1) {
-        return 0;
+        return self.continueWatchingVideos.count;
     } else if (section == 2) {
         return self.topicsCategory.count;
     } else if (section == 3) {
@@ -205,42 +232,43 @@
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
 {
-    if (section == 1 || section == 2 || section == 3) {
+    if (section == 2 || section == 3) {
         return 10.f;
-    } else {
-        return 0.f;
     }
+    if (section == 1) {
+        return self.continueWatchingVideos.count > 0 ? 10.f : 0.f;
+    }
+    return 0.f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     DetailViewController *detailVC = [[DetailViewController alloc] init];
+    if (indexPath.section == 0) {
+        detailVC.title = self.kingkongCategory[indexPath.item].title;
+    } else if (indexPath.section == 1) {
+        detailVC.title = self.continueWatchingVideos[indexPath.item].videoTitle;
+    } else if (indexPath.section == 2) {
+        detailVC.title = self.topicsCategory[indexPath.item].title;
+    } else {
+        detailVC.title = self.eventsCategory[indexPath.item].title;
+    }
     [self.navigationController pushViewController:detailVC animated:YES];
 }
+
 
 - (void)seeAllButtonTapped:(UIButton *)button
 {
     DetailViewController *detailVC = [[DetailViewController alloc] init];
+    detailVC.title = @"Continue Watching";
     [self.navigationController pushViewController:detailVC animated:YES];
-}
-
-/// 设置TableView为Plain风格的时候Section header不悬停
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView == self.browseTableView) {
-        CGFloat sectionHeaderHeight = 40.f;
-        if (scrollView.contentOffset.y <= sectionHeaderHeight &&
-            scrollView.contentOffset.y >= 0) {
-            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-        } else if (scrollView.contentOffset.y >= sectionHeaderHeight) {
-            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
-        }
-    }
 }
 
 - (UIView *)createHeaderViewWithTitle:(NSString *)title
 {
     UIView *headrView = [[UIView alloc] init];
+    headrView.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc] init];
     label.text = title;
     label.textAlignment = NSTextAlignmentLeft;
@@ -256,6 +284,7 @@
                           actionTitle:(NSString *)actionTitle
 {
     UIView *headrView = [[UIView alloc] init];
+    headrView.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc] init];
     label.text = title;
     label.textAlignment = NSTextAlignmentLeft;
